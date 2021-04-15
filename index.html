@@ -1,36 +1,56 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Parcel Sandbox</title>
+    <title>Mi primer menu</title>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="src/normalize.css" />
+    <script
+      src="https://kit.fontawesome.com/ba358a22cf.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <header>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <i class="fas fa-home"></i><a href="#">Inicio</a>
+          </li>
+          <li class="nav__item">
+            <i class="fas fa-user-friends"></i><a href="#">Sobre nosotros</a>
+          </li>
+          <li class="nav__item">
+            <i class="fas fa-dollar-sign"></i><a href="#">Gana dinero</a>
+          </li>
+          <li class="nav__item">
+            <i class="fas fa-question-circle"></i><a href="#">Ayuda</a>
+          </li>
+        </ul>
+        <ul class="nav__responsive-list">
+          <div class="nav__responsive-button-container">
+            <div class="nav__responsive-button">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+          <div class="nav__list-container">
+            <li class="nav__responsive-item">
+              <i class="fas fa-home"></i><a href="#">Inicio</a>
+            </li>
+            <li class="nav__responsive-item">
+              <i class="fas fa-user-friends"></i><a href="#">Sobre nosotros</a>
+            </li>
+            <li class="nav__responsive-item">
+              <i class="fas fa-dollar-sign"></i><a href="#">Gana dinero</a>
+            </li>
+            <li class="nav__responsive-item">
+              <i class="fas fa-question-circle"></i><a href="#">Ayuda</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </header>
     <div id="app"></div>
-    <div class="container">
-      <div class="card">
-        <a href="#" class="card__thumbnail">
-          <img
-            src="https://wallpaperaccess.com/full/714173.jpg"
-            alt="desert"
-            class="card__image"
-          />
-        </a>
-        <div class="card__texts">
-          <h3 class="card__title">
-            <a href="#" class="card__link">Lorem ipsum dolor sit amet </a>
-          </h3>
-          <p class="card__extract">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum
-            sequi facilis dicta architecto impedit fugit eaque non excepturi
-            omnis, quod quo tempore. Earum deleniti quibusdam aliquam. Sed
-            soluta dolorem corporis?
-          </p>
-          <a href="#" class="button">
-            <span class="button__text">See more</span>
-          </a>
-        </div>
-      </div>
-    </div>
   </body>
 </html>

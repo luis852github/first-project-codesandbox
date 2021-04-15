@@ -1,73 +1,68 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.nav__responsive-list {
+  display: none;
 }
-body {
-  background-color: #f6f6fe;
-  font-family: sans-serif;
+.nav {
+  background: #26a;
 }
-a {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-.container {
-  max-width: 1000px;
-  width: 90%;
-  margin: 0 auto;
-}
-.card {
-  background-color: #fff;
-  border-radius: 15px;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  position: relative;
-  margin-bottom: 50px;
-}
-.card__image {
-  width: 100%;
-}
-.card__thumbnail {
-  width: 650px;
-  height: 200px;
-  margin-right: 20px;
-  border-radius: 10px;
-  overflow: hidden;
+.nav__item {
   display: inline-block;
-}
-.card__title {
-  font-size: 30px;
-  font-weight: normal;
-  margin-bottom: 20px;
-}
-
-.card__link {
-  color: #000;
-}
-.card__extract {
-  line-height: 28px;
-  color: #6d6d6d;
-  margin-bottom: 20px;
-}
-.button {
-  border: none;
-  min-width: 180px;
-  height: 50px;
-  padding: 0 30px;
-  background: #403cc2;
+  padding: 12px;
   color: #fff;
-  display: inline-block;
-  border-radius: 100px;
-  text-decoration: none;
-  display: inline-flex;
-  justify-content: space-between;
-  align-content: center;
-  transition: 0.3 ease all;
 }
-.button:hover {
+.nav__item a,
+.nav__responsive-item a {
+  color: #fff;
   text-decoration: none;
-  background: #232075;
+}
+.nav__item i,
+.nav__responsive-item i {
+  box-sizing: border-box;
+  text-align: right;
+  margin-right: 5px;
+}
+.nav__item:hover > a,
+.nav__item:hover {
+  color: #bbb;
+}
+.nav__responsive-button-container {
+  position: absolute;
+  width: 100%;
+  font-size: 25px;
+  margin-top: -64px;
+}
+.nav__responsive-button {
+  background: #69c;
+  padding: 6px 20px;
+  text-align: right;
+}
+@media only screen and (max-width: 600px) {
+  .nav__list {
+    display: none;
+  }
+  .nav {
+    height: 37px;
+    width: 100%;
+  }
+  .nav__responsive-list {
+    display: block;
+    position: absolute;
+    width: 100%;
+    background: #9bf;
+    height: 100%;
+    margin-top: 37px;
+    padding-top: 27px;
+  }
+  .nav__responsive-item {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 9px 20px;
+  }
+  .nav__responsive-item i {
+    width: 30px;
+    text-align: center;
+    color: #016;
+  }
+  .nav__responsive-item a {
+    color: #016;
+  }
 }
